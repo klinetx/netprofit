@@ -1,0 +1,2 @@
+window.NETPROFIT_VIP_INVOICE = "";
+window.NETPROFIT_PREMIUM_INVOICE = "";
