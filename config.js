@@ -1,6 +1,6 @@
 window.NETPROFIT_CONFIG = {
   APP_URL: "https://klinetx.github.io/netprofit/",
-  API_BASE_URL: "https://sherman-round-grows-aquarium.trycloudflare.com",
+  API_BASE_URL: "https://caused-morning-tanks-undertaken.trycloudflare.com",
   BOT_USERNAME: "",
   VIP_INVOICE_URL: "",
   PREMIUM_INVOICE_URL: "",
