@@ -1,24 +1,16 @@
 window.NETPROFIT_CONFIG = {
   APP_URL: "https://klinetx.github.io/netprofit/",
-
-  API_BASE_URL: "https://excel-river-occurring-detector.trycloudflare.com",
-
+  API_BASE_URL: "https://screens-intelligence-focused-spas.trycloudflare.com",
   BOT_USERNAME: "",
-
   VIP_INVOICE_URL: "",
   PREMIUM_INVOICE_URL: "",
-
   VIP_PRICE: 299,
   PREMIUM_PRICE: 699,
-
   APP_NAME: "Net Profit",
   APP_VERSION: "3.0.0",
-
   DEFAULT_CATEGORY: "all",
-
   DEMO_MODE: false
 };
-
 
 window.NETPROFIT_API = {
   url(path) {
@@ -26,11 +18,8 @@ window.NETPROFIT_API = {
       window.NETPROFIT_CONFIG.API_BASE_URL || ""
     ).replace(/\/+$/, "");
 
-    const clean = String(path || "")
-      .replace(/^\/+/, "");
+    const clean = String(path || "").replace(/^\/+/, "");
 
-    return base
-      ? `${base}/${clean}`
-      : "";
+    return base ? `${base}/${clean}` : "";
   }
 };
