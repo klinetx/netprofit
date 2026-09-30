@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Net Profit — рынки, AI, технологии, бизнес и идеи для заработка.">
+  <meta name="color-scheme" content="dark light">
+  <title>Net Profit</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js?63"></script>
+  <link rel="stylesheet" href="style.css">
+<style>
+:root{--bg:#07090d;--panel:#0e1219;--panel2:#111722;--line:rgba(255,255,255,.08);--text:#f5f7fb;--muted:#8d96a8;--green:#49e59a;--red:#ff6b7d;--gold:#e8b85c;--purple:#9b7cff;--blue:#5ba8ff;--shadow:0 18px 55px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{min-height:100vh}button,input{font:inherit}button{color:inherit}a{text-decoration:none;color:inherit}.main{max-width:760px;margin:auto;padding:18px 16px 110px}.topbar{position:sticky;top:0;z-index:20;max-width:760px;margin:auto;padding:14px 16px;background:rgba(7,9,13,.82);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:11px;align-items:center;cursor:pointer}.brand-mark{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,#1c2431,#0b0e14);border:1px solid var(--line);font-weight:900;letter-spacing:-1px}.brand-name{font-size:13px;font-weight:900;letter-spacing:2px}.brand-sub{font-size:8px;color:var(--muted);letter-spacing:1.4px;margin-top:2px}.icon-btn,.nav-item,.quick-card,.news-card,.market-card,.setting-row{border:0;background:none;cursor:pointer}.icon-btn{width:40px;height:40px;border-radius:50%;background:var(--panel);border:1px solid var(--line)}.view{display:none}.view.active{display:block}.hero{min-height:250px;padding:28px 4px 20px;display:flex;justify-content:space-between;align-items:center}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:800}.hero h1,.page-title h1{font-size:38px;line-height:1.03;margin:10px 0}.hero h1 span{background:linear-gradient(90deg,#fff,var(--gold));-webkit-background-clip:text;color:transparent}.hero p,.page-title p{color:var(--muted);line-height:1.55;max-width:470px}.hero-orb{width:155px;height:155px;position:relative;display:grid;place-items:center}.orb-ring{position:absolute;border:1px solid rgba(232,184,92,.2);border-radius:50%;inset:0}.ring-2{inset:22px;border-color:rgba(91,168,255,.25)}.orb-core{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#2a2417,#111);border:1px solid rgba(232,184,92,.45);font-size:30px;color:var(--gold);box-shadow:0 0 50px rgba(232,184,92,.12)}.quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.quick-card{padding:16px;text-align:left;border:1px solid var(--line);background:linear-gradient(145deg,var(--panel2),var(--panel));border-radius:18px;box-shadow:var(--shadow)}.quick-icon{display:block;font-size:24px;margin-bottom:12px}.quick-card strong{display:block}.quick-card small{color:var(--muted);display:block;margin-top:5px}.section{margin-top:30px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:12px}.section h2{margin:5px 0 0}.text-btn{background:none;border:0;color:var(--blue);cursor:pointer}.news-list{display:grid;gap:10px}.news-card{display:block;width:100%;text-align:left;padding:16px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#111721,#0b0f15)}.news-card:hover{border-color:rgba(255,255,255,.16)}.news-card-top,.news-card-foot,.market-card-head,.sub-top{display:flex;justify-content:space-between;align-items:center}.news-category{font-size:10px;color:var(--gold);font-weight:800}.news-time{font-size:10px;color:var(--muted)}.news-card h3{font-size:17px;line-height:1.3;margin:10px 0 7px}.news-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.news-card-foot{margin-top:14px;color:#697385;font-size:11px}.market-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.market-mini{padding:14px;border:1px solid var(--line);border-radius:15px;background:var(--panel)}.market-mini span,.market-mini strong,.market-mini small{display:block}.market-mini span{font-size:11px;color:var(--muted)}.market-mini strong{margin:6px 0}.positive{color:var(--green)}.negative{color:var(--red)}.premium-banner{position:relative;overflow:hidden;margin-top:30px;padding:22px;border-radius:22px;border:1px solid rgba(232,184,92,.25);background:linear-gradient(135deg,#18150f,#10141b)}.premium-banner h3{font-size:22px;margin:10px 0}.premium-banner p{color:var(--muted);font-size:13px}.premium-symbol{position:absolute;right:25px;top:28px;font-size:70px;color:rgba(232,184,92,.12)}.badge{display:inline-flex;padding:6px 9px;border-radius:999px;font-size:9px;font-weight:900;letter-spacing:1px;background:#252a34;color:#fff}.gold{background:rgba(232,184,92,.13);color:var(--gold)}.orange{background:rgba(255,139,68,.13);color:#ff9b62}.purple{background:rgba(155,124,255,.13);color:#b39dff}.primary-btn{border:0;border-radius:13px;padding:12px 15px;background:linear-gradient(135deg,#e8b85c,#b8842e);color:#0b0c0f;font-weight:900;cursor:pointer}.gold-btn{background:linear-gradient(135deg,#f0c76b,#b77b22)}.page-title{padding:20px 2px}.page-title.center{text-align:center}.category-scroll{display:flex;gap:8px;overflow:auto;padding:3px 0 14px}.category{white-space:nowrap;border:1px solid var(--line);background:var(--panel);padding:9px 12px;border-radius:999px;color:var(--muted);cursor:pointer}.category.active{color:#fff;border-color:rgba(232,184,92,.35);background:rgba(232,184,92,.1)}.market-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.market-card{padding:16px;text-align:left;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.market-card-head{font-size:11px;color:var(--muted)}.market-card strong{display:block;font-size:22px;margin:16px 0 7px}.market-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}.chart-card,.info-card,.feature-card,.subscription-card,.developer-note{margin-top:12px;padding:17px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.chart-head{display:flex;justify-content:space-between}.chart-wrap{margin-top:18px}.chart{width:100%;height:180px;color:var(--green)}.chart-area{fill:url(#chartFill)}.chart-line{fill:none;stroke:currentColor;stroke-width:3}.chart-labels{display:flex;justify-content:space-between;color:#667084;font-size:9px}.info-card{display:flex;gap:12px}.info-card p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.5}.info-icon{font-size:22px}.ai-feature{display:flex;gap:14px;align-items:flex-start}.feature-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:rgba(155,124,255,.13);color:#b39dff;font-size:24px}.idea-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.idea-card{padding:17px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.idea-card span{color:var(--gold);font-size:11px}.idea-card b{display:block;margin:8px 0}.idea-card p{color:var(--muted);font-size:12px;line-height:1.5}.profile-hero{display:flex;gap:14px;align-items:center;padding:20px 2px}.profile-avatar{width:68px;height:68px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(145deg,#222a36,#10141b);border:1px solid var(--line);font-weight:900;font-size:22px}.profile-hero h1{margin:5px 0;font-size:25px}.profile-hero p{margin:0;color:var(--muted)}.settings-list{margin-top:12px;display:grid;gap:8px}.setting-row{display:grid;grid-template-columns:42px 1fr 20px;align-items:center;text-align:left;padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.setting-icon{font-size:20px}.setting-row small{display:block;color:var(--muted);margin-top:3px}.chevron{color:#697385;font-size:22px}.plans{display:grid;gap:12px}.plan-card{padding:20px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(145deg,#111721,#0c1016)}.plan-card.premium{border-color:rgba(232,184,92,.3)}.plan-head{display:flex;justify-content:space-between;align-items:center}.plan-price{color:var(--gold)}.plan-card h2{margin:18px 0 3px}.plan-card p{color:var(--muted)}.plan-card ul{list-style:none;padding:0;color:#c5cad4;line-height:2;font-size:13px}.plan-card .primary-btn{width:100%}.developer-note{display:flex;gap:12px}.bottom-nav{position:fixed;z-index:30;left:50%;transform:translateX(-50%);bottom:0;width:min(760px,100%);display:grid;grid-template-columns:repeat(5,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(9,12,17,.92);backdrop-filter:blur(20px);border-top:1px solid var(--line)}.nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;color:#737d90;padding:7px 2px}.nav-item span{font-size:20px}.nav-item small{font-size:9px}.nav-item.active{color:var(--gold)}.modal{position:fixed;inset:0;z-index:50}.modal.hidden{display:none}.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72)}.modal-sheet{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(760px,100%);max-height:86vh;overflow:auto;padding:24px 18px 32px;border-radius:24px 24px 0 0;background:#10151d;border:1px solid var(--line);box-shadow:var(--shadow)}.modal-close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:30px;color:#8790a0;cursor:pointer}.modal-sheet h2{font-size:25px;line-height:1.2}.modal-meta{color:var(--muted);font-size:11px}.modal-body{margin:18px 0;white-space:pre-wrap;color:#cdd2dc;line-height:1.65}.source-link{display:inline-flex;color:var(--blue)}.toast{position:fixed;left:50%;bottom:92px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#e8b85c;color:#0b0d11;padding:10px 15px;border-radius:999px;font-size:12px;font-weight:800;z-index:60;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.stat{padding:13px;border:1px solid var(--line);border-radius:15px;background:var(--panel)}.stat b{display:block;font-size:20px}.stat span{font-size:9px;color:var(--muted)}.morning-card{margin-top:14px;padding:18px;border:1px solid rgba(91,168,255,.2);border-radius:19px;background:linear-gradient(145deg,#101a27,#0c1118)}.morning-card h3{margin:7px 0}.morning-card p{color:var(--muted);font-size:13px;line-height:1.55}.search-box{display:flex;gap:8px;margin-bottom:12px}.search-box input{flex:1;min-width:0;border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:12px;color:#fff;outline:none}
+@media(max-width:480px){.hero{min-height:220px}.hero h1{font-size:34px}.hero-orb{width:120px;height:120px}.orb-core{width:58px;height:58px}.idea-grid{grid-template-columns:1fr}.market-grid{grid-template-columns:1fr 1fr}}
+.ai-chat{margin-top:16px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#121824,#0c1017);overflow:hidden}.ai-chat-head{padding:15px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}.ai-chat-head .feature-icon{flex:0 0 auto}.ai-chat-title{font-weight:900}.ai-chat-sub{font-size:11px;color:var(--muted);margin-top:2px}.ai-messages{display:grid;gap:10px;padding:14px;max-height:360px;overflow:auto}.ai-msg{max-width:92%;padding:12px 13px;border-radius:15px;line-height:1.5;font-size:13px;white-space:pre-wrap}.ai-msg.user{justify-self:end;background:rgba(91,168,255,.14);border:1px solid rgba(91,168,255,.18)}.ai-msg.bot{justify-self:start;background:#171e29;border:1px solid var(--line)}.ai-msg.muted{color:var(--muted)}.ai-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.ai-form input{flex:1;min-width:0;border:1px solid var(--line);background:#0a0e14;border-radius:13px;padding:12px;color:#fff;outline:none}.ai-form button{border:0;border-radius:13px;padding:12px 14px;background:linear-gradient(135deg,#9b7cff,#5ba8ff);color:#fff;font-weight:900;cursor:pointer}.ai-form button:disabled{opacity:.55}.ai-suggestions{display:flex;gap:7px;overflow:auto;padding:0 12px 12px}.ai-suggestion{white-space:nowrap;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 10px;color:#cfd5df;font-size:11px;cursor:pointer}
+</style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <header class="topbar">
+      <div class="brand" data-action="home">
+        <div class="brand-mark">NP</div>
+        <div>
+          <div class="brand-name">NET PROFIT</div>
+          <div class="brand-sub">MARKETS • AI • MONEY</div>
+        </div>
+      </div>
+
+      <button class="icon-btn" id="profileTopBtn" aria-label="Профиль" data-action="profile">
+        <span id="topAvatar">◉</span>
+      </button>
+    </header>
+
+    <main id="main" class="main">
+      <section id="view-home" class="view active">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">NET PROFIT</span>
+            <h1>Зарабатывай<br><span>умнее.</span></h1>
+            <p>Рынки, AI, технологии, бизнес и идеи, которые помогают принимать решения.</p>
+          </div>
+          <div class="hero-orb">
+            <div class="orb-ring ring-1"></div>
+            <div class="orb-ring ring-2"></div>
+            <div class="orb-core">₽</div>
+          </div>
+        </div>
+
+        <div class="quick-grid">
+          <button class="quick-card" data-action="markets">
+            <span class="quick-icon">📈</span>
+            <strong>Рынки</strong>
+            <small>Котировки и тренды</small>
+          </button>
+          <button class="quick-card" data-action="ai">
+            <span class="quick-icon">🤖</span>
+            <strong>AI</strong>
+            <small>Технологии и инструменты</small>
+          </button>
+          <button class="quick-card" data-action="money">
+            <span class="quick-icon">💰</span>
+            <strong>Заработок</strong>
+            <small>Идеи и модели</small>
+          </button>
+          <button class="quick-card" data-action="business">
+            <span class="quick-icon">🏢</span>
+            <strong>Бизнес</strong>
+            <small>Компании и сделки</small>
+          </button>
+        </div>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">СЕГОДНЯ</span>
+              <h2>Главное</h2>
+            </div>
+            <button class="text-btn" data-action="news">Все новости →</button>
+          </div>
+          <div class="morning-card"><span class="eyebrow">MORNING DESK</span><h3>Что двигает рынок</h3><p id="morningSummary">Собираем свежие сигналы из новостной ленты…</p><button class="text-btn" data-action="morning">Открыть обзор →</button></div><div id="homeNews" class="news-list"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">LIVE</span>
+              <h2>Рынок</h2>
+            </div>
+            <button class="text-btn" data-action="markets">Подробнее →</button>
+          </div>
+          <div id="homeMarkets" class="market-strip"></div>
+        </section>
+
+        <section class="premium-banner">
+          <div class="premium-glow"></div>
+          <div class="premium-content">
+            <span class="badge gold">PREMIUM</span>
+            <h3>Больше сигналов.<br>Больше возможностей.</h3>
+            <p>Закрытый контент и расширенные разделы Net Profit.</p>
+            <button class="primary-btn" data-action="subscriptions">Открыть подписки</button>
+          </div>
+          <div class="premium-symbol">◆</div>
+        </section>
+      </section>
+
+      <section id="view-news" class="view">
+        <div class="page-title">
+          <span class="eyebrow">NEWSROOM</span>
+          <h1>Новости</h1>
+          <p>Коротко о том, что влияет на деньги, бизнес и технологии.</p>
+        </div>
+
+        <div class="search-box"><input id="newsSearch" placeholder="Поиск по новостям…"><button class="category" id="clearSearch">Сбросить</button></div>
+        <div class="category-scroll" id="newsCategories">
+          <button class="category active" data-category="all">🔥 Главное</button>
+          <button class="category" data-category="markets">📈 Рынки</button>
+          <button class="category" data-category="money">💰 Заработок</button>
+          <button class="category" data-category="ai">🤖 AI</button>
+          <button class="category" data-category="tech">💻 Технологии</button>
+          <button class="category" data-category="business">🏢 Бизнес</button>
+          <button class="category" data-category="crypto">₿ Крипто</button>
+          <button class="category" data-category="macro">🏦 Макро</button>
+        </div>
+
+        <div id="newsList" class="news-list large"></div>
+      </section>
+
+      <section id="view-markets" class="view">
+        <div class="page-title">
+          <span class="eyebrow">MARKET DESK</span>
+          <h1>Рынки</h1>
+          <p>Демо-котировки интерфейса. Реальные данные подключаются через API.</p>
+        </div>
+
+        <div class="market-grid" id="marketsGrid"></div>
+
+        <div class="chart-card">
+          <div class="chart-head">
+            <div>
+              <span class="eyebrow">NET PROFIT INDEX</span>
+              <h3>Динамика</h3>
+            </div>
+            <span class="change positive">+2.84%</span>
+          </div>
+          <div class="chart-wrap">
+            <svg viewBox="0 0 600 210" preserveAspectRatio="none" class="chart">
+              <defs>
+                <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="currentColor" stop-opacity=".26"/>
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="chart-area" d="M0,180 C35,170 42,150 75,158 C105,166 120,122 148,136 C180,151 188,112 215,118 C250,126 265,85 295,96 C330,109 348,76 375,83 C410,92 430,55 455,69 C490,86 510,38 540,52 C565,64 578,26 600,34 L600,210 L0,210 Z"/>
+              <path class="chart-line" d="M0,180 C35,170 42,150 75,158 C105,166 120,122 148,136 C180,151 188,112 215,118 C250,126 265,85 295,96 C330,109 348,76 375,83 C410,92 430,55 455,69 C490,86 510,38 540,52 C565,64 578,26 600,34"/>
+            </svg>
+            <div class="chart-labels"><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span><span>Сейчас</span></div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">ℹ️</div>
+          <div>
+            <strong>Важно</strong>
+            <p>Котировки в этой версии являются демонстрационными. Не принимай инвестиционные решения только на основании интерфейса.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-ai" class="view">
+        <div class="page-title">
+          <span class="eyebrow">ARTIFICIAL INTELLIGENCE</span>
+          <h1>AI</h1>
+          <p>Инструменты, модели и способы применять искусственный интеллект для работы и бизнеса.</p>
+        </div>
+
+        <div class="feature-card ai-feature">
+          <div class="feature-icon">✦</div>
+          <div>
+            <span class="badge purple">NET PROFIT AI</span>
+            <h3>AI-помощник прямо внутри приложения</h3>
+            <p>Задавай вопросы про рынки, бизнес, технологии, товары и актуальные события. Для текущих вопросов AI получает свежий новостной контекст.</p>
+          </div>
+        </div>
+
+        <div class="ai-chat" id="aiChat">
+          <div class="ai-chat-head">
+            <div class="feature-icon">🤖</div>
+            <div>
+              <div class="ai-chat-title">Net Profit AI</div>
+              <div class="ai-chat-sub">OpenAI → Gemini → Groq • свежий контекст для актуальных вопросов</div>
+            </div>
+          </div>
+          <div id="aiMessages" class="ai-messages" aria-live="polite"></div>
+          <div class="ai-suggestions">
+            <button type="button" class="ai-suggestion" data-ai-question="Что сейчас происходит на рынках?">📈 Рынки сейчас</button>
+            <button type="button" class="ai-suggestion" data-ai-question="Какие важные новости сегодня?">📰 Новости</button>
+            <button type="button" class="ai-suggestion" data-ai-question="Что нового в AI и технологиях?">🤖 AI сегодня</button>
+            <button type="button" class="ai-suggestion" data-ai-question="Объясни простыми словами, что сейчас влияет на Bitcoin">₿ Bitcoin</button>
+          </div>
+          <form id="aiForm" class="ai-form">
+            <input id="aiInput" type="text" maxlength="8000" autocomplete="off" placeholder="Спроси Net Profit AI…">
+            <button type="submit" id="aiSendBtn">Отправить</button>
+          </form>
+        </div>
+
+        <div id="aiNews" class="news-list"></div>
+      </section>
+
+      <section id="view-money" class="view">
+        <div class="page-title">
+          <span class="eyebrow">MONEY LAB</span>
+          <h1>Заработок</h1>
+          <p>Практические идеи монетизации, цифровые продукты и бизнес-модели.</p>
+        </div>
+
+        <div class="idea-grid">
+          <article class="idea-card">
+            <span>01</span>
+            <b>AI-услуги</b>
+            <p>Автоматизация контента, поддержки и рутинных процессов для малого бизнеса.</p>
+          </article>
+          <article class="idea-card">
+            <span>02</span>
+            <b>Цифровые продукты</b>
+            <p>Шаблоны, сервисы, боты и инструменты с повторяемой моделью продаж.</p>
+          </article>
+          <article class="idea-card">
+            <span>03</span>
+            <b>Микро-SaaS</b>
+            <p>Узкий сервис под конкретную проблему вместо попытки сделать всё сразу.</p>
+          </article>
+          <article class="idea-card">
+            <span>04</span>
+            <b>Контент + продукт</b>
+            <p>Аудитория, полезный контент и собственный продукт как единая система.</p>
+          </article>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">💡</div>
+          <div>
+            <strong>Подход Net Profit</strong>
+            <p>Сначала проверка спроса и экономики идеи, затем масштабирование. Не путай возможность заработать с гарантией дохода.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-business" class="view">
+        <div class="page-title">
+          <span class="eyebrow">BUSINESS</span>
+          <h1>Бизнес</h1>
+          <p>Компании, сделки, продукты и события, которые могут менять рынок.</p>
+        </div>
+        <div id="businessNews" class="news-list"></div>
+      </section>
+
+      <section id="view-saved" class="view">
+        <div class="page-title"><span class="eyebrow">BOOKMARKS</span><h1>Избранное</h1><p>Сохранённые материалы доступны на этом устройстве.</p></div>
+        <div id="savedList" class="news-list"></div>
+      </section>
+
+      <section id="view-morning" class="view">
+        <div class="page-title"><span class="eyebrow">MORNING DESK</span><h1>Утро на рынках</h1><p>Короткий обзор главных событий из текущей новостной ленты.</p></div>
+        <div class="morning-card"><span class="eyebrow">ЧТО ПРОИСХОДИТ</span><h3 id="morningTitle">Главные сигналы</h3><p id="morningBody">Загрузка…</p></div>
+        <div id="morningNews" class="news-list" style="margin-top:12px"></div>
+      </section>
+
+      <section id="view-profile" class="view">
+        <div class="profile-hero">
+          <div class="profile-avatar" id="profileAvatar">NP</div>
+          <div>
+            <span class="eyebrow">MY ACCOUNT</span>
+            <h1 id="profileName">Пользователь</h1>
+            <p id="profileUsername">@netprofit</p>
+          </div>
+        </div>
+
+        <div class="subscription-card" id="subscriptionCard">
+          <div class="sub-top">
+            <span class="badge gold">ЗАГРУЗКА</span>
+            <span class="sub-status" id="subscriptionStatus">Проверяем доступ…</span>
+          </div>
+          <h3>Проверяем подписку</h3>
+          <p>Получаем актуальный статус аккаунта из Net Profit API.</p>
+          <button class="primary-btn" data-action="subscriptions">Открыть подписки</button>
+        </div>
+
+        <div class="stats-grid"><div class="stat"><b id="statNews">0</b><span>новостей</span></div><div class="stat"><b id="statSaved">0</b><span>сохранено</span></div><div class="stat"><b id="statDays">1</b><span>день с Net Profit</span></div></div><div class="settings-list">
+          <button class="setting-row" data-action="subscriptions">
+            <span class="setting-icon">💎</span>
+            <span><b>Подписка</b><small>VIP и Premium</small></span>
+            <span class="chevron">›</span>
+          </button>
+          <button class="setting-row" id="openChatBtn">
+            <span class="setting-icon">💬</span>
+            <span><b>Закрытый чат</b><small>Доступ по активной подписке</small></span>
+            <span class="chevron">›</span>
+          </button>
+          <button class="setting-row" id="openBotBtn">
+            <span class="setting-icon">🤖</span>
+            <span><b>Открыть бота</b><small>Управление аккаунтом</small></span>
+            <span class="chevron">›</span>
+          </button>
+          <button class="setting-row" id="themeBtn">
+            <span class="setting-icon">◐</span>
+            <span><b>Тема Telegram</b><small>Синхронизирована</small></span>
+            <span class="chevron">›</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="view-subscriptions" class="view">
+        <div class="page-title center">
+          <span class="eyebrow">MEMBERSHIP</span>
+          <h1>Выбери доступ</h1>
+          <p>Расширенные возможности Net Profit.</p>
+        </div>
+
+        <div class="plans">
+          <article class="plan-card vip">
+            <div class="plan-head">
+              <span class="badge orange">VIP</span>
+              <span class="plan-price"><b>299</b> ⭐</span>
+            </div>
+            <h2>VIP</h2>
+            <p>30 дней</p>
+            <ul>
+              <li>✓ Закрытый чат</li>
+              <li>✓ VIP-разделы</li>
+              <li>✓ Дополнительный контент</li>
+              <li>✓ Доступ к возможностям сообщества</li>
+            </ul>
+            <button class="primary-btn" data-plan="vip">Получить VIP · 299 ⭐</button>
+          </article>
+
+          <article class="plan-card premium">
+            <div class="plan-head">
+              <span class="badge gold">PREMIUM</span>
+              <span class="plan-price"><b>699</b> ⭐</span>
+            </div>
+            <h2>Premium</h2>
+            <p>30 дней</p>
+            <ul>
+              <li>✓ Всё из VIP</li>
+              <li>✓ Premium-раздел</li>
+              <li>✓ Расширенные материалы</li>
+              <li>✓ Возможность попасть в команду разработчиков</li>
+            </ul>
+            <button class="primary-btn gold-btn" data-plan="premium">Получить Premium · 699 ⭐</button>
+          </article>
+        </div>
+
+        <div class="developer-note">
+          <span>👨‍💻</span>
+          <div><b>Developer</b><p>Не продаётся через Mini App. Доступ выдаётся вручную владельцем проекта.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" id="bottomNav">
+      <button class="nav-item active" data-action="home"><span>⌂</span><small>Главная</small></button>
+      <button class="nav-item" data-action="news"><span>▤</span><small>Новости</small></button>
+      <button class="nav-item" data-action="markets"><span>⌁</span><small>Рынки</small></button>
+      <button class="nav-item" data-action="saved"><span>★</span><small>Избранное</small></button>
+      <button class="nav-item" data-action="profile"><span>◉</span><small>Профиль</small></button>
+    </nav>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="newsModal" class="modal hidden">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-sheet">
+        <button class="modal-close" data-close-modal>×</button>
+        <div id="modalCategory" class="badge"></div>
+        <h2 id="modalTitle"></h2>
+        <div id="modalMeta" class="modal-meta"></div>
+        <div id="modalBody" class="modal-body"></div>
+        <button id="modalSave" class="primary-btn" style="margin-right:8px">☆ Сохранить</button><a id="modalSource" class="source-link" href="#" target="_blank" rel="noopener">Открыть источник →</a>
+      </article>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script>
+    // Net Profit API: используем основной домен API.
+    window.NETPROFIT_CONFIG = window.NETPROFIT_CONFIG || {};
+    window.NETPROFIT_CONFIG.API_BASE_URL = "https://api.netprofitapp.online";
+  </script>
+  <script>
+    (() => {
+      "use strict";
+
+      const TG = window.Telegram?.WebApp || null;
+      const CFG = window.NETPROFIT_CONFIG || {};
+      const API = window.NETPROFIT_API;
+
+      const state = {
+        view: "home",
+        search: "",
+        saved: JSON.parse(localStorage.getItem("np_saved") || "[]"),
+        category: CFG.DEFAULT_CATEGORY || "all",
+        user: null,
+        subscription: null,
+        news: [],
+        aiMessages: [],
+        aiBusy: false,
+        markets: [
+          {name:"BTC/USDT", value:"104 820", change:"+2.18%", positive:true},
+          {name:"Brent", value:"79.24", change:"+0.64%", positive:true},
+          {name:"EUR/USD", value:"1.1734", change:"-0.21%", positive:false},
+          {name:"S&P 500", value:"6 722", change:"+0.31%", positive:true},
+          {name:"Золото", value:"3 746", change:"+0.42%", positive:true},
+          {name:"USD/RUB", value:"80.91", change:"-0.18%", positive:true}
+        ]
+      };
+
+      const apiState = {
+        news: "loading",
+        profile: "loading",
+        profileError: "",
+        lastProfileAt: null
+      };
+
+      const demoNews = [
+        {
+          id:1, category:"markets", emoji:"📈", source:"Reuters",
+          title:"Мировые рынки оценивают новые сигналы по ставкам",
+          summary:"Инвесторы следят за доходностями облигаций, валютами и ожиданиями по денежной политике.",
+          time:"12 мин назад"
+        },
+        {
+          id:2, category:"ai", emoji:"🤖", source:"Net Profit",
+          title:"AI всё глубже входит в бизнес-процессы",
+          summary:"Компании ускоряют автоматизацию поддержки, аналитики и создания контента.",
+          time:"28 мин назад"
+        },
+        {
+          id:3, category:"money", emoji:"💰", source:"Net Profit",
+          title:"Микро-SaaS: почему узкие продукты продолжают привлекать предпринимателей",
+          summary:"Небольшой продукт под конкретную боль клиента может быть проще проверить и запустить.",
+          time:"41 мин назад"
+        },
+        {
+          id:4, category:"business", emoji:"🏢", source:"Reuters",
+          title:"Компании пересматривают инвестиционные планы",
+          summary:"Бизнес ищет способы повысить производительность и сократить стоимость операций.",
+          time:"1 ч назад"
+        },
+        {
+          id:5, category:"tech", emoji:"💻", source:"Net Profit",
+          title:"Новые инструменты автоматизации меняют работу небольших команд",
+          summary:"Разработчики объединяют AI-агентов, автоматизацию и собственные базы знаний.",
+          time:"1 ч назад"
+        },
+        {
+          id:6, category:"crypto", emoji:"₿", source:"Net Profit",
+          title:"Крипторынок снова показывает повышенную волатильность",
+          summary:"Участники рынка оценивают ликвидность и новые движения крупных активов.",
+          time:"2 ч назад"
+        }
+      ];
+
+      function initTelegram() {
+        if (!TG) return;
+        try {
+          TG.ready();
+          TG.expand();
+          TG.setHeaderColor(TG.themeParams?.bg_color || "#0b0d12");
+          TG.setBackgroundColor(TG.themeParams?.bg_color || "#0b0d12");
+          if (TG.setBottomBarColor) TG.setBottomBarColor(TG.themeParams?.bg_color || "#0b0d12");
+        } catch (_) {}
+
+        if (TG.initDataUnsafe?.user) {
+          state.user = TG.initDataUnsafe.user;
+        }
+        applyTelegramTheme();
+        TG.onEvent?.("themeChanged", applyTelegramTheme);
+      }
+
+      function applyTelegramTheme() {
+        if (!TG?.themeParams) return;
+        const root = document.documentElement;
+        const t = TG.themeParams;
+        if (t.bg_color) root.style.setProperty("--tg-bg", t.bg_color);
+        if (t.text_color) root.style.setProperty("--tg-text", t.text_color);
+        if (t.hint_color) root.style.setProperty("--tg-hint", t.hint_color);
+        if (t.link_color) root.style.setProperty("--tg-link", t.link_color);
+        if (t.button_color) root.style.setProperty("--tg-button", t.button_color);
+        if (t.button_text_color) root.style.setProperty("--tg-button-text", t.button_text_color);
+      }
+
+      function getInitials(user) {
+        if (!user) return "NP";
+        const first = user.first_name || "";
+        const last = user.last_name || "";
+        return ((first[0] || "") + (last[0] || "")).toUpperCase() || "NP";
+      }
+
+      function escapeHtml(s) {
+        return String(s ?? "").replace(/[&<>"']/g, ch => ({
+          "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+        }[ch]));
+      }
+
+      function timeNow() {
+        return new Date().toLocaleTimeString("ru-RU", {hour:"2-digit", minute:"2-digit"});
+      }
+
+      function showToast(text) {
+        const el = document.getElementById("toast");
+        el.textContent = text;
+        el.classList.add("show");
+        clearTimeout(showToast.timer);
+        showToast.timer = setTimeout(() => el.classList.remove("show"), 2400);
+      }
+
+      function setView(view) {
+        const target = document.getElementById(`view-${view}`);
+        if (!target) return;
+
+        document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+        target.classList.add("active");
+        state.view = view;
+
+        document.querySelectorAll(".nav-item").forEach(n => {
+          n.classList.toggle("active", n.dataset.action === view);
+        });
+
+        window.scrollTo({top:0, behavior:"smooth"});
+        renderView(view);
+      }
+
+      function renderView(view) {
+        if (view === "home") renderHome();
+        if (view === "news") renderNews();
+        if (view === "markets") renderMarkets();
+        if (view === "ai") renderAI();
+        if (view === "money") {}
+        if (view === "business") renderBusiness();
+        if (view === "profile") renderProfile();
+        if (view === "saved") renderSaved();
+        if (view === "morning") renderMorning();
+      }
+
+      function filteredNews(category = state.category) {
+        const all = state.news.length ? state.news : demoNews;
+        const filtered = category === "all" ? all : all.filter(n => n.category === category);
+        return state.search ? filtered.filter(n => (`${n.title} ${n.summary||""} ${n.body||""} ${n.source||""}`).toLowerCase().includes(state.search.toLowerCase())) : filtered;
+      }
+
+      function newsCard(n) {
+        return `
+          <button class="news-card" data-news-id="${escapeHtml(n.id)}">
+            <div class="news-card-top">
+              <span class="news-category">${n.emoji || "📰"} ${escapeHtml(categoryName(n.category))}</span>
+              <span class="news-time">${escapeHtml(n.time || timeNow())}</span>
+            </div>
+            <h3>${escapeHtml(n.title)}</h3>
+            <p>${escapeHtml(n.summary || "")}</p>
+            <div class="news-card-foot">
+              <span>${escapeHtml(n.source || "Net Profit")}</span>
+              <span>${state.saved.includes(String(n.id)) ? "★ Сохранено" : "☆ Сохранить"}</span>
+            </div>
+          </button>
+        `;
+      }
+
+      function categoryName(c) {
+        return ({
+          markets:"Рынки", money:"Заработок", ai:"AI", tech:"Технологии",
+          business:"Бизнес", crypto:"Крипто", macro:"Макро", all:"Главное"
+        })[c] || "Новости";
+      }
+
+      function renderHome() {
+        document.getElementById("homeNews").innerHTML = filteredNews("all").slice(0,3).map(newsCard).join("");
+        document.getElementById("homeMarkets").innerHTML = state.markets.slice(0,4).map(marketMini).join("");
+      }
+
+      function marketMini(m) {
+        return `
+          <div class="market-mini">
+            <span>${escapeHtml(m.name)}</span>
+            <strong>${escapeHtml(m.value)}</strong>
+            <small class="${m.positive ? "positive" : "negative"}">${escapeHtml(m.change)}</small>
+          </div>
+        `;
+      }
+
+      function renderNews() {
+        document.getElementById("newsList").innerHTML = filteredNews().map(newsCard).join("");
+        document.querySelectorAll(".category").forEach(btn => {
+          btn.classList.toggle("active", btn.dataset.category === state.category);
+        });
+      }
+
+      function renderAI() {
+        const list = (state.news.length ? state.news : demoNews).filter(n => n.category === "ai" || n.category === "tech");
+        document.getElementById("aiNews").innerHTML = list.length ? list.map(newsCard).join("") : demoNews.slice(1,4).map(newsCard).join("");
+        renderAIMessages();
+      }
+
+      function escapeAIText(value) {
+        return String(value || "").replace(/[&<>]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[ch]));
+      }
+
+      function renderAIMessages() {
+        const box = document.getElementById("aiMessages");
+        if (!box) return;
+        const messages = state.aiMessages.length ? state.aiMessages : [{role:"bot", text:"Привет! Я Net Profit AI 🤖\n\nЗадай вопрос о рынках, бизнесе, технологиях или текущих событиях."}];
+        box.innerHTML = messages.map(m => `<div class="ai-msg ${m.role === "user" ? "user" : "bot"}${m.muted ? " muted" : ""}">${escapeAIText(m.text)}</div>`).join("");
+        box.scrollTop = box.scrollHeight;
+      }
+
+      async function askAI(question) {
+        const prompt = String(question || "").trim();
+        if (!prompt || state.aiBusy) return;
+        if (!TG?.initData || !CFG.API_BASE_URL) {
+          showToast("Открой Mini App внутри Telegram");
+          return;
+        }
+        state.aiMessages.push({role:"user", text:prompt});
+        state.aiMessages.push({role:"bot", text:"Думаю и проверяю свежий контекст…", muted:true});
+        state.aiBusy = true;
+        renderAIMessages();
+        const input=document.getElementById("aiInput"), button=document.getElementById("aiSendBtn");
+        if(input) input.value="";
+        if(button){button.disabled=true;button.textContent="…";}
+        try {
+          const response=await fetch(API.url("/api/generate"),{
+            method:"POST",
+            headers:{"Accept":"application/json","Content-Type":"application/json","Authorization":`tma ${TG.initData}`},
+            credentials:"omit",cache:"no-store",body:JSON.stringify({prompt})
+          });
+          const raw=await response.text();
+          let data=null; try{data=raw?JSON.parse(raw):null;}catch(_){ }
+          if(!response.ok || !data?.ok) throw new Error(data?.error || `HTTP ${response.status}`);
+          state.aiMessages[state.aiMessages.length-1]={role:"bot",text:data.answer || "AI не вернул ответ."};
+        } catch(e) {
+          state.aiMessages[state.aiMessages.length-1]={role:"bot",text:`Не удалось получить ответ AI.\n\n${e?.message || "Ошибка соединения"}`};
+        } finally {
+          state.aiBusy=false;
+          if(button){button.disabled=false;button.textContent="Отправить";}
+          renderAIMessages();
+        }
+      }
+
+      function renderBusiness() {
+        const list = (state.news.length ? state.news : demoNews).filter(n => n.category === "business");
+        document.getElementById("businessNews").innerHTML = list.length ? list.map(newsCard).join("") : demoNews.slice(3,5).map(newsCard).join("");
+      }
+
+      function renderMarkets() {
+        document.getElementById("marketsGrid").innerHTML = state.markets.map(m => `
+          <article class="market-card">
+            <div class="market-card-head">
+              <span>${escapeHtml(m.name)}</span>
+              <span class="market-dot"></span>
+            </div>
+            <strong>${escapeHtml(m.value)}</strong>
+            <div class="${m.positive ? "positive" : "negative"}">${escapeHtml(m.change)}</div>
+          </article>
+        `).join("");
+      }
+
+      function renderProfile() {
+        const u = state.user;
+        const name = u ? [u.first_name, u.last_name].filter(Boolean).join(" ") : (TG?.initData ? "Telegram-пользователь" : "Открыто вне Telegram");
+        const username = u?.username ? `@${u.username}` : (TG?.initData ? "Загрузка профиля…" : "Гость");
+        const initials = getInitials(u);
+        const sub = state.subscription || {};
+
+        document.getElementById("profileName").textContent = name || "Telegram-пользователь";
+        document.getElementById("profileUsername").textContent = username;
+        document.getElementById("profileAvatar").textContent = initials;
+        document.getElementById("topAvatar").textContent = initials;
+
+        const card = document.getElementById("subscriptionCard");
+        if (!card) return;
+
+        const badgeEl = card.querySelector(".badge");
+        const statusEl = document.getElementById("subscriptionStatus");
+        const titleEl = card.querySelector("h3");
+        const descEl = card.querySelector("p");
+        const buttonEl = card.querySelector("button");
+
+        if (apiState.profile === "loading") {
+          badgeEl.textContent = "ЗАГРУЗКА";
+          titleEl.textContent = "Проверяем подписку";
+          descEl.textContent = "Получаем актуальный статус аккаунта из Net Profit API.";
+          statusEl.textContent = "Проверяем доступ…";
+          return;
+        }
+
+        if (apiState.profile === "error") {
+          badgeEl.textContent = "API ERROR";
+          titleEl.textContent = "Не удалось проверить подписку";
+          descEl.textContent = apiState.profileError || "Mini App не получил ответ от сервера. Не показываем FREE, пока статус не подтверждён.";
+          statusEl.textContent = "Статус не подтверждён";
+          buttonEl.textContent = "Повторить проверку";
+          return;
+        }
+
+        let badge = "FREE", title = "Базовый доступ", desc = "Новости и открытые разделы Net Profit.", status = "Активен";
+
+        if (sub.is_developer || sub.type === "developer") {
+          badge = "DEVELOPER";
+          title = "Developer";
+          desc = "Бессрочный доступ к закрытому сообществу и Premium-возможностям.";
+          status = "Бессрочно";
+        } else if (sub.is_premium || sub.type === "premium") {
+          badge = "PREMIUM";
+          title = "Premium";
+          desc = `Premium-доступ до ${sub.expires_text || "—"}.`;
+          status = sub.expires_text ? `До ${sub.expires_text}` : "Активен";
+        } else if (sub.is_vip || sub.type === "vip") {
+          badge = "VIP";
+          title = "VIP";
+          desc = `VIP-доступ до ${sub.expires_text || "—"}.`;
+          status = sub.expires_text ? `До ${sub.expires_text}` : "Активен";
+        }
+
+        badgeEl.textContent = badge;
+        titleEl.textContent = title;
+        descEl.textContent = desc;
+        statusEl.textContent = status;
+        buttonEl.textContent = badge === "DEVELOPER" ? "Открыть возможности" : "Улучшить доступ";
+      }
+
+      function persistSaved(){ localStorage.setItem("np_saved", JSON.stringify(state.saved)); }
+
+      function renderSaved(){
+        const all=state.news.length?state.news:demoNews;
+        const list=all.filter(n=>state.saved.includes(String(n.id)));
+        document.getElementById("savedList").innerHTML=list.length?list.map(newsCard).join(""):`<div class="info-card"><div class="info-icon">☆</div><div><strong>Пока пусто</strong><p>Открывай новости и нажимай «☆ Сохранить».</p></div></div>`;
+      }
+
+      function renderMorning(){
+        const all=state.news.length?state.news:demoNews;
+        const top=all.slice(0,5);
+        const text=top.length?top.slice(0,3).map(n=>n.title).join(". ")+".":"Свежих данных пока нет.";
+        const a=document.getElementById("morningBody"), b=document.getElementById("morningNews");
+        if(a)a.textContent=text; if(b)b.innerHTML=top.map(newsCard).join("");
+      }
+
+      function refreshStats(){ const a=document.getElementById("statNews"),b=document.getElementById("statSaved"); if(a)a.textContent=state.news.length||demoNews.length; if(b)b.textContent=state.saved.length; }
+
+      function openNews(id) {
+        const all = state.news.length ? state.news : demoNews;
+        const n = all.find(x => String(x.id) === String(id));
+        if (!n) return;
+
+        document.getElementById("modalCategory").textContent = `${n.emoji || "📰"} ${categoryName(n.category)}`;
+        document.getElementById("modalTitle").textContent = n.title;
+        document.getElementById("modalMeta").textContent = `${n.source || "Net Profit"} • ${n.time || timeNow()}`;
+        document.getElementById("modalBody").textContent = n.body || n.summary || "Подробности появятся после подключения новостного API.";
+        const source = document.getElementById("modalSource");
+        if (n.url) {
+          source.href = n.url;
+          source.style.display = "inline-flex";
+        } else {
+          source.removeAttribute("href");
+          source.style.display = "none";
+        }
+
+        const saveBtn=document.getElementById("modalSave");
+        const sid=String(n.id);
+        saveBtn.textContent=state.saved.includes(sid)?"★ Сохранено":"☆ Сохранить";
+        saveBtn.onclick=()=>{ if(state.saved.includes(sid)) state.saved=state.saved.filter(x=>x!==sid); else state.saved.push(sid); persistSaved(); saveBtn.textContent=state.saved.includes(sid)?"★ Сохранено":"☆ Сохранить"; renderSaved(); renderProfile(); renderHome(); };
+        document.getElementById("newsModal").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.getElementById("newsModal").classList.add("hidden");
+      }
+
+      async function apiGet(path, options = {}) {
+        const url = API?.url(path);
+        if (!url) throw new Error("API_BASE_URL не задан в config.js");
+
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), options.timeout || 12000);
+
+        try {
+          const headers = { "Accept": "application/json" };
+          // Telegram recommends sending Telegram.WebApp.initData to the backend
+          // for validation. initDataUnsafe is never used as trusted auth data.
+          if (TG?.initData) headers["Authorization"] = `tma ${TG.initData}`;
+
+          const response = await fetch(url, {
+            method: "GET",
+            headers,
+            credentials: "omit",
+            cache: "no-store",
+            signal: controller.signal
+          });
+
+          const raw = await response.text();
+          let data = null;
+          try { data = raw ? JSON.parse(raw) : null; } catch (_) {}
+
+          if (!response.ok) {
+            const error = new Error(data?.error || `HTTP ${response.status}`);
+            error.status = response.status;
+            throw error;
+          }
+          return data;
+        } finally {
+          clearTimeout(timeout);
+        }
+      }
+
+      let backendLoading = false;
+
+      async function loadBackendData() {
+        if (!CFG.API_BASE_URL || backendLoading) return;
+
+        backendLoading = true;
+        apiState.news = "loading";
+        apiState.profile = "loading";
+        apiState.profileError = "";
+        renderProfile();
+
+        // Public news is independent from Telegram authentication.
+        try {
+          const news = await apiGet("/api/news?limit=30");
+          if (Array.isArray(news)) state.news = news;
+          else if (Array.isArray(news?.items)) state.news = news.items;
+          apiState.news = "ok";
+        } catch (e) {
+          apiState.news = "error";
+          console.warn("NEWS API:", e);
+        }
+
+        // Profile requires Telegram initData. If the app is opened outside Telegram,
+        // do not silently turn the account into FREE.
+        if (!TG?.initData) {
+          apiState.profile = "error";
+          apiState.profileError = "Открой Mini App из Telegram, чтобы получить подтверждённый статус подписки.";
+        } else {
+          try {
+            const profile = await apiGet("/api/me");
+            if (!profile?.user || !profile?.subscription) {
+              throw new Error("API вернул неполный профиль");
+            }
+            state.user = profile.user;
+            state.subscription = profile.subscription;
+            apiState.profile = "ok";
+            apiState.lastProfileAt = Date.now();
+          } catch (e) {
+            apiState.profile = "error";
+            apiState.profileError = e?.message || "Не удалось получить профиль";
+            console.error("PROFILE API:", {
+              url: API?.url("/api/me"),
+              hasInitData: Boolean(TG?.initData),
+              error: e
+            });
+          }
+        }
+
+        renderProfile();
+        refreshStats();
+        renderHome();
+        renderNews();
+        renderAI();
+        renderBusiness();
+        renderMarkets();
+        refreshStats();
+        const ms=document.getElementById("morningSummary"); if(ms){ const a=(state.news.length?state.news:demoNews).slice(0,2); ms.textContent=a.length?a.map(n=>n.title).join(" • "):"Свежих событий пока нет."; }
+        backendLoading = false;
+      }
+
+      async function openInvoice(plan) {
+        if (!TG?.initData || !CFG.API_BASE_URL) {
+          const staticUrl = plan === "vip" ? CFG.VIP_INVOICE_URL : CFG.PREMIUM_INVOICE_URL;
+          if (!staticUrl) {
+            showToast("Открой Mini App внутри Telegram для оплаты");
+            return;
+          }
+          if (TG?.openInvoice) {
+            TG.openInvoice(staticUrl, status => {
+              if (status === "paid") {
+                showToast("Оплата прошла успешно 🎉");
+                setTimeout(loadBackendData, 800);
+              }
+            });
+          } else {
+            window.open(staticUrl, "_blank", "noopener");
+          }
+          return;
+        }
+
+        showToast("Готовим оплату…");
+        const data = await apiGet(`/api/invoice?plan=${encodeURIComponent(plan)}`);
+        if (!data?.invoice_url) {
+          showToast(data?.error || "Не удалось создать оплату");
+          return;
+        }
+
+        if (!TG?.openInvoice) {
+          window.open(data.invoice_url, "_blank", "noopener");
+          return;
+        }
+
+        TG.openInvoice(data.invoice_url, status => {
+          if (status === "paid") {
+            showToast("Оплата прошла успешно 🎉");
+            setTimeout(loadBackendData, 800);
+          } else if (status === "cancelled") {
+            showToast("Оплата отменена");
+          } else if (status === "failed") {
+            showToast("Не удалось провести оплату");
+          }
+        });
+      }
+
+      async function openChat() {
+        if (!CFG.API_BASE_URL || !TG?.initData) {
+          showToast("Открой Mini App внутри Telegram");
+          return;
+        }
+        showToast("Готовим персональную ссылку…");
+        const data = await apiGet("/api/chat");
+        if (!data?.invite_link) {
+          showToast(data?.error || "Чат доступен только по активной подписке");
+          return;
+        }
+        if (TG?.openTelegramLink) TG.openTelegramLink(data.invite_link);
+        else window.open(data.invite_link, "_blank", "noopener");
+      }
+
+      function openBot() {
+        if (TG?.openTelegramLink && CFG.BOT_USERNAME) {
+          TG.openTelegramLink(`https://t.me/${CFG.BOT_USERNAME}`);
+          return;
+        }
+        if (CFG.BOT_USERNAME) {
+          window.open(`https://t.me/${CFG.BOT_USERNAME}`, "_blank", "noopener");
+          return;
+        }
+        showToast("Укажи BOT_USERNAME в config.js");
+      }
+
+      document.addEventListener("click", e => {
+        const actionEl = e.target.closest("[data-action]");
+        if (actionEl) {
+          const action = actionEl.dataset.action;
+          if (["home","news","markets","ai","money","business","profile","subscriptions","saved","morning"].includes(action)) {
+            if (action === "news") state.category = "all";
+            if (action === "subscriptions" && apiState.profile === "error" && TG?.initData) {
+              loadBackendData();
+              return;
+            }
+            setView(action);
+          }
+        }
+
+        const newsEl = e.target.closest("[data-news-id]");
+        if (newsEl) openNews(newsEl.dataset.newsId);
+
+        const cat = e.target.closest("[data-category]");
+        if (cat) {
+          state.category = cat.dataset.category;
+          setView("news");
+        }
+
+        const plan = e.target.closest("[data-plan]");
+        if (plan) openInvoice(plan.dataset.plan);
+
+        if (e.target.closest("[data-close-modal]")) closeModal();
+
+        if (e.target.closest("#openChatBtn")) openChat();
+
+        if (e.target.closest("#openBotBtn")) openBot();
+
+        if (e.target.closest("#themeBtn")) {
+          showToast("Тема синхронизируется с Telegram");
+          applyTelegramTheme();
+        }
+
+        const aiSuggestion=e.target.closest("[data-ai-question]");
+        if(aiSuggestion) askAI(aiSuggestion.dataset.aiQuestion);
+      });
+
+      document.getElementById("aiForm")?.addEventListener("submit", e=>{
+        e.preventDefault();
+        askAI(document.getElementById("aiInput")?.value || "");
+      });
+
+      document.getElementById("newsSearch")?.addEventListener("input", e=>{ state.search=e.target.value.trim(); renderNews(); });
+      document.getElementById("clearSearch")?.addEventListener("click", ()=>{ state.search=""; const x=document.getElementById("newsSearch"); if(x)x.value=""; renderNews(); });
+
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      initTelegram();
+
+      console.info("Net Profit Mini App", {
+        apiBaseUrl: CFG.API_BASE_URL,
+        inTelegram: Boolean(TG),
+        hasInitData: Boolean(TG?.initData),
+        version: CFG.APP_VERSION || "unknown"
+      });
+
+      renderProfile();
+      refreshStats();
+      renderHome();
+      renderNews();
+      renderMarkets();
+      renderAI();
+      renderBusiness();
+      loadBackendData();
+
+      // Refresh visible data every 60 seconds when an API is configured.
+      setInterval(() => {
+        if (CFG.API_BASE_URL) loadBackendData();
+      }, 60000);
+    })();
+  </script>
+</body>
+</html>
